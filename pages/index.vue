@@ -20,13 +20,23 @@ export default {
       reader.readAsText(target);
 
       reader.onload = async(e) => {
-        const result = e.target.result;
-        console.log(await result)
+        const result = await e.target.result;
+        const array = result.split("\r\n");
+        array.shift();
+        const array2 = array.map(el => {
+          return el.split(',')
+        })
+        const onlyYakiniku = [];
+        array2.forEach(el=> {
+          if (el[3].indexOf('焼肉') !== -1) {
+            onlyYakiniku.push(el)
+          }
+        });
       };
       reader.onerror = function () {
         alert("エラー：ファイルをロードできません。");
       };
-    }
+    },
   },
 
 }
