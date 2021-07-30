@@ -1,0 +1,16 @@
+[
+  {
+    "name": "inspire",
+    "path": "/inspire",
+    "component": "/Users/kazukiono/retty_team5/pages/inspire.vue",
+    "chunkName": "pages/inspire",
+    "_name": "_32276249"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/kazukiono/retty_team5/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_b4c633fe"
+  }
+]
